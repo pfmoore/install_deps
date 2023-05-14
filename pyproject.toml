@@ -1,0 +1,17 @@
+[project]
+name = "install-deps"
+version = "0.1.0"
+description = "Install a project's dependencies"
+authors = [
+    {name = "Paul Moore", email = "p.f.moore@gmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">= 3.7"
+
+[project.scripts]
+install-deps = "install_deps:main"
+
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
